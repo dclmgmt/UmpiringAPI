@@ -1,0 +1,14 @@
+C:\Development\UmpiringApi\UmpiringApi\bin\Release\netcoreapp2.2\UmpiringApi.deps.json
+C:\Development\UmpiringApi\UmpiringApi\bin\Release\netcoreapp2.2\UmpiringApi.runtimeconfig.json
+C:\Development\UmpiringApi\UmpiringApi\bin\Release\netcoreapp2.2\UmpiringApi.runtimeconfig.dev.json
+C:\Development\UmpiringApi\UmpiringApi\bin\Release\netcoreapp2.2\UmpiringApi.dll
+C:\Development\UmpiringApi\UmpiringApi\bin\Release\netcoreapp2.2\UmpiringApi.pdb
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.csprojAssemblyReference.cache
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.csproj.CoreCompileInputs.cache
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.RazorAssemblyInfo.cache
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.RazorAssemblyInfo.cs
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.AssemblyInfoInputs.cache
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.AssemblyInfo.cs
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.RazorTargetAssemblyInfo.cache
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.dll
+C:\Development\UmpiringApi\UmpiringApi\obj\Release\netcoreapp2.2\UmpiringApi.pdb
