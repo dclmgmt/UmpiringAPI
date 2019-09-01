@@ -12,6 +12,7 @@ namespace UmpiringApi.Helpers
             CreateMap<TblBook, BookListDto>();
             CreateMap<LoginDto, TblUser>();
             CreateMap<RegisterDto, TblUser>();
+            CreateMap<TblBook, BookListDto>();
         }
     }
 }

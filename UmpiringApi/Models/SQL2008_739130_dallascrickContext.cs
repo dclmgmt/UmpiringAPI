@@ -21,7 +21,7 @@ namespace UmpiringApi.Models
         public virtual DbSet<TblBook> TblBook { get; set; }
         public virtual DbSet<TblUser> TblUser { get; set; }
         public virtual DbSet<UnlockScoresheet> UnlockScoresheet { get; set; }
-
+        public virtual DbSet<TblRole> TblRoles { get; set; }
         // Unable to generate entity type for table 'dbo.address'. Please see the warning messages.
         // Unable to generate entity type for table 'dbo.award_types'. Please see the warning messages.
         // Unable to generate entity type for table 'dbo.dtproperties'. Please see the warning messages.
@@ -163,7 +163,9 @@ namespace UmpiringApi.Models
                     .HasMaxLength(100)
                     .IsUnicode(false);
             });
-
+            modelBuilder.Entity<TblRole>()
+                .Property(e => e.RoleName)
+                .IsUnicode(false);
             modelBuilder.Entity<TblUser>(entity =>
             {
                 entity.HasKey(e => e.UserId);

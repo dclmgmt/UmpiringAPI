@@ -13,5 +13,7 @@ namespace UmpiringApi.Dtos
         [Required]
         [StringLength(64, MinimumLength = 8, ErrorMessage = "You must provide password between 8 and 20 characters")]
         public string Password { get; set; }
+        [Required]
+        public string RoleId { get; set; } 
     }
 }
