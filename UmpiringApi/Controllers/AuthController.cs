@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Query.Expressions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using UmpiringApi.Dtos;
@@ -30,8 +31,40 @@ namespace UmpiringApi.Controllers
         }
         [AllowAnonymous]
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterDto registerDto)
+        public async Task<IActionResult> Register(dynamic data)
         {
+            var registerDto = new RegisterDto();
+            try
+            {
+                if (data != null)
+                {
+                    foreach (Newtonsoft.Json.Linq.JProperty item in data)
+                    {
+                        switch (item.Name)
+                        {
+                            case "Email":
+                                registerDto.Email = item.Value.ToString();
+                                break;
+                            case "FullName":
+                                registerDto.FullName = item.Value.ToString();
+                                break;
+                            case "Password":
+                                registerDto.Password = item.Value.ToString();
+                                break;
+                            case "RoleId":
+                                registerDto.RoleId = item.Value.ToString();
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.InnerException);
+            }
             registerDto.Email = registerDto.Email.ToLower();
             if (await _repo.UserExists(registerDto.Email))
                 return BadRequest("Email already exists");
