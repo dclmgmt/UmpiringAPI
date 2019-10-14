@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -22,6 +23,9 @@ namespace UmpiringApi.Models
         public virtual DbSet<TblUser> TblUser { get; set; }
         public virtual DbSet<UnlockScoresheet> UnlockScoresheet { get; set; }
         public virtual DbSet<TblRole> TblRoles { get; set; }
+
+        [NotMapped]
+        public virtual DbSet<Assignment> Assignments { get; set; }
         // Unable to generate entity type for table 'dbo.address'. Please see the warning messages.
         // Unable to generate entity type for table 'dbo.award_types'. Please see the warning messages.
         // Unable to generate entity type for table 'dbo.dtproperties'. Please see the warning messages.

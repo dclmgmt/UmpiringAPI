@@ -13120,11 +13120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\UmpiringApi\\UmpiringApi\\UmpiringApi.csproj",
+      "projectUniqueName": "C:\\Development\\UmpiringAPI\\UmpiringApi\\UmpiringApi.csproj",
       "projectName": "UmpiringApi",
-      "projectPath": "C:\\Development\\UmpiringApi\\UmpiringApi\\UmpiringApi.csproj",
+      "projectPath": "C:\\Development\\UmpiringAPI\\UmpiringApi\\UmpiringApi.csproj",
       "packagesPath": "C:\\Users\\kkumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\UmpiringApi\\UmpiringApi\\obj\\",
+      "outputPath": "C:\\Development\\UmpiringAPI\\UmpiringApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

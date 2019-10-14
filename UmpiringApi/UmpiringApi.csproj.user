@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>UmpiringApi</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>UmpiringApi - Web Deploy</NameOfLastUsedPublishProfile>
+    <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
 </Project>
